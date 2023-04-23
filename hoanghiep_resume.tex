@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}\\
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeTech}[2]{
+ \underline{#1:} #2\\
+}
+\newcommand{\resumeOther}[2]{
+ \underline{#1:} #2\\
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/phantranhoanghiep/}{\Large Phan Tran Hoang Hiep}} & Email : \href{mailto:phanhiep2603@gmai.com}{phanhiep2603@gmai.com}\\
+  \href{https://www.linkedin.com/in/phantranhoanghiep/}{https://www.linkedin.com/in/phantranhoanghiep/} & Mobile : \href{tel:+84934051670}{+84-934-051-670} \\
+  \textbf{{Backend NodeJs Developer}}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nguyen Tat Thanh University (NTT Institute of International Education)}{Ho Chi Minh, VietNam}
+      {Bachelor of Software Engineering}{Aug. 2017 -- Aug. 2021}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Programming Languages}{: Javascript, Typescript, Golang.}
+   }
+   \item{
+     \textbf{Database}{: Knowledge of database MySQL, MongoDB, and PostgreSQL management system.}
+   }
+   \item{
+     \textbf{Web}{: Knowledge of Web. Capability in HTML, CSS, Javascript, Typescript, Bootstrap 4, EJS template, Handlebars template.}
+   }
+   \item{
+     \textbf{NodeJs}{: Good knowledge of NodeJS.}
+   }
+   \item{
+     \textbf{Framework Nodejs}{: Good knowledge of ExpressJS and NestJS.}
+   }
+   \item{
+     \textbf{Other}{: Proficient in Git, Jira, Bitbucket, Docker, Nginx.}
+   }
+   \item{
+    \textbf{English}{: Basic in communicating in English.}
+  }
+ \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ITBee Solutions}{Ho Chi Minh, VietNam}
+      {Backend Developer}{Sep 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{Fichier Prospection}
+          {Web sales data. Improve the adaptability of the filter API by creating index. Improve import data from large csv file by create store procedure.}
+          \resumeTech{Technologies}{Nestjs, PostgreSQL}
+          \resumeOther{Other}{Gitlab, Jira, Bitbucket, Postman.}
+          \href{https://fichier-prospection.online/}{Link}
+        \resumeItem{KNS}
+          {R\&D project that aim to build a new backend system for online education system for primary school. Connect third-party: FTP SMS MOMT for active and forgot password account.}
+          \resumeTech{Technologies}{Nestjs, PostgreSQL, web-socket.}
+          \resumeOther{Other}{Gitlab, Jira, Bitbucket, Postman.}
+          \href{https://sanchoikns.vn/skills}{Link}
+        \resumeItem{Duc Tin CRM}
+          {−	Manage operating systems for staff, orders, and customers. Connect third-party: Facebook business meta for conversation chat and DHL, GHTK for order delivery}
+          \resumeTech{Technologies}{ExpressJs, Mongodb, Postman.}
+          \resumeOther{Other}{Gitlab, CICD Gitlab, Jira, Postman.}
+        \resumeItem{Swanbay Boat}
+          {The boat booking website can cash payment, voucher, combo, and vnpay. App Checkin passenger.}
+          \resumeTech{Technologies}{Nestjs, MySQL, Firebase cloud message, web-socket.}
+          \resumeOther{Other}{Git, Jira, Postman.}
+        \resumeItem{ICY Beauty}
+          {Web E-commerce, multi-level commission management, manage branch, and member (Transform API from Golang to Nestjs for Web and App Android and IOS).}
+          \resumeTech{Technologies}{Nestjs, MySQL, Firebase cloud message, web-socket.}
+          \resumeOther{Other}{Git, Jira, Postman.}
+        \resumeItem{Bee to Earn}
+          {Build a market and place to introduce CVs for IT professions, sign contracts, receive commissions from referrals.}
+          \resumeTech{Technologies}{Loopback,  MongoDB, RabbitMQ , Docker, Firebase cloud message.}
+          \resumeOther{Other}{Git, Jira, Postman.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 - Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+  %  \resumeSubHeadingListEnd
+% -------------------------------------------
+
+    \resumeSubheading
+      {FPT Software}{Ho Chi Minh, VietNam}
+      {Internship}{Jun 2020 - Sep 2020}
+      \resumeItemListStart
+        \resumeItem{Web Application - Bus Ticket Booking}
+          {R\&D \& Design and build an online bus booking website.}
+          \resumeTech{Technologies}{Java, Spring-boot, MySQL, JDBC, JSP Servlet, Bootstrap 4}
+      \resumeItemListEnd\
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{QuantSoftware Toolkit}
+%       {Open source python library for financial data analysis and machine learning for finance.}
+%     \resumeSubItem{Github Visualization}
+%       {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%     \resumeSubItem{Recommendation System}
+%       {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%   \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
