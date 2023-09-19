@@ -23,4 +23,4 @@ docker run --rm -i -v "$PWD":/data latex pdflatex hoanghiep_resume.tex
 
 ### License
 
-Format is MIT but all the data is owned by Hoang Hiep.
+Format is MIT but all the data is owned by Hoang Hiep!!!!
